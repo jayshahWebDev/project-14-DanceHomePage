@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f5f2f0;
+}
+
+.mainDiv {
+  display: flex;
+}
+
+.mainDiv > :first-child {
+  height: 100vh;
+  background-size: cover;
+  width: 35%;
+}
+
+.mainDiv > :nth-child(2) {
+  width: 65%;
+}
+
+.navBar {
+  margin: 3% 7% 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.navLine {
+  height: 1px;
+  width: 48%;
+  background-color: #000000;
+}
+
+.listItems > a {
+  font-family: "Merriweather", sans-serif;
+  font-size: 15px;
+  color: #758283;
+  text-decoration: none;
+  margin-left: 50px;
+  font-weight: 500;
+}
+
+.listItems > a:hover {
+  color: #000000;
+}
+
+.introDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.emptyText {
+  margin-top: 5%;
+  margin-left: 4%;
+  font-family: "Merriweather", sans-serif;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px;
+  font-size: 150px;
+  line-height: 0.9;
+}
+
+.textDiv {
+  display: flex;
+  align-items: flex-end;
+  column-gap: 20px;
+}
+
+.fillText {
+  margin-left: 20%;
+  font-family: "Merriweather", sans-serif;
+  font-weight: 700;
+  font-size: 150px;
+  color: #333333;
+  line-height: 0.9;
+}
+
+.subText {
+  font-family: "Merriweather", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  color: #858585;
+}
+
+.socialIcon {
+  margin-top: 4%;
+  margin-right: 7%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 45px;
+}
+
+.socialIcon > a {
+  color: #000000;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.packageBtn {
+  margin-top: 4%;
+  margin-right: 7%;
+  float: right;
+  background-color: #333333;
+  color: #ffffff;
+  font-family: "Merriweather", sans-serif;
+  font-size: 20px;
+  padding: 15px 45px;
+}
+
+.fotterDiv {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 2%;
+  margin-top: 12%;
+  margin-right: 7%;
+  flex: 1;
+}
+
+.fotterDiv :last-child {
+  flex: 0.3;
+}
+
+.list {
+  flex: 0.3;
+  display: flex;
+  flex-direction: column;
+  row-gap: 45px;
+}
+
+.listItem {
+  font-family: "Merriweather", sans-serif;
+  font-size: 20px;
+}
+
+.listItem ::before {
+  content: "ok";
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  background-color: #000000;
+}
+
+.footerContent {
+  flex: 0.4;
+  width: fit-content;
+}
+
+.footerContent > h1 {
+  margin: 15px 0;
+  font-family: "Merriweather", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.footerContent :first-child {
+  height: 40px;
+}
+
+.footerContent :last-child {
+  height: 230px;
+}
+
+.lastDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lastDiv > p {
+  font-size: 200px;
+}
+
+@media screen and (max-width: 480px) {
+  .mainDiv {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .heroImg {
+    display: none;
+  }
+
+  .mainDiv :last-child {
+    width: 100%;
+  }
+
+  .navLine {
+    display: none;
+  }
+
+  .listItems {
+    margin-left: 20px;
+  }
+
+  .listItems > a {
+    text-align: center;
+    margin-left: 30px;
+  }
+
+  .introDiv {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .emptyText {
+    font-size: 75px;
+  }
+
+  .textDiv {
+    column-gap: 5px;
+  }
+
+  .fillText {
+    font-size: 75px;
+  }
+
+  .subText {
+    font-size: 20px;
+  }
+
+  .socialIcon {
+    margin-top: 7%;
+    margin-left: 13%;
+    flex-direction: row;
+    column-gap: 60px;
+  }
+
+  .socialIcon > a {
+    color: #000000;
+    font-size: 30px;
+    text-decoration: none;
+  }
+
+  .packageBtn {
+    margin-top: 10%;
+    margin-right: 16%;
+  }
+
+  .fotterDiv {
+    margin-top: 30%;
+    margin-left: 0;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .list {
+    align-items: center;
+  }
+
+  .animation {
+    margin-left: 75%;
+  }
+
+  .footerContent :last-child {
+    height: 300px;
+  }
+
+  .lastDiv {
+    display: none;
+  }
+}
